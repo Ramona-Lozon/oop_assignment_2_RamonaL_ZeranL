@@ -1,0 +1,12 @@
+{
+    "name": "ramona_zeran/oop_assingment",
+    "description": "oop_assignment_2!",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ramona_zeran"
+        }
+    ],
+    "require": {}
+}
