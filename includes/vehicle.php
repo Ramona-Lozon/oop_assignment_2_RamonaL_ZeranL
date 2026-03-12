@@ -5,11 +5,13 @@ namespace OOP;
 class vehicle {
     protected string $type;
     protected int $wheels;
+    protected int $passengers;
 
-    public function __construct(string $type, int $wheels)
+    public function __construct(string $type, int $wheels, int $passengers)
     {
         $this->type = $type;
         $this->wheels = $wheels;
+        $this->passengers = $passengers;
     }
 
     public function getClassName(): string {

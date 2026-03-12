@@ -26,6 +26,7 @@ use OOP\car;
 use OOP\truck;
 use OOP\motorcycle;
 use OOP\vehicle;
+use OOP\pickupTruck;
 ?>
 
 <!DOCTYPE html>
@@ -38,13 +39,16 @@ use OOP\vehicle;
 <body>
     <h1>Vehicles</h1>
     <?php
-        $truck = new truck("Pickup Truck", 4);
-        $car = new car("Sedan", 4);
-        $motorcycle = new motorcycle("Harley", 2);
+        $truck = new truck("Pickup Truck", 4, 4);
+        $car = new car("Sedan", 4, 4);
+        $motorcycle = new motorcycle("Harley", 2, 4);
         
         echo $truck->displayInfo();
         echo $car->displayInfo();
         echo $motorcycle->displayInfo();
+
+        $Chevy = new pickupTruck("Chevy Silverado");
+        var_dump($Chevy)
     ?>
 </body>
 </html>
