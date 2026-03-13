@@ -17,6 +17,10 @@ spl_autoload_register(function ($class) {
 use OOP\truck;
 use OOP\pickup;
 use OOP\dumpTruck;
+use OOP\car;
+use OOP\sedan;
+use OOP\motorcycle;
+use OOP\crotchRocket;
 use OOP\vehicleInterface;
 ?>
 
@@ -36,6 +40,8 @@ use OOP\vehicleInterface;
         //define local instances of classes
         $pickup = new pickup();
         $dumpTruck = new dumpTruck();
+        $sedan = new sedan();
+        $crotchRocket = new crotchRocket();
 
         //pickup methods
         echo $pickup->displayInfo();
@@ -55,6 +61,26 @@ use OOP\vehicleInterface;
         echo $dumpTruck->tow() . "<br>";
         echo $dumpTruck->transport() . "<br>";
         echo displaySpeed($dumpTruck);
+
+        //sedan methods
+        echo $sedan->displayInfo();
+        echo $sedan->start() . "<br>";
+        echo $sedan->drive() . "<br>";
+        echo $sedan->stop() . "<br>";
+        echo $sedan->red() . "<br>";
+        echo $sedan->beachDay() . "<br>";
+        echo $sedan->safety() . "<br>";
+        echo displaySpeed($sedan);
+
+        //crotch rocket methods
+        echo $crotchRocket->displayInfo() . "<br>";
+        echo $crotchRocket->start() . "<br>";
+        echo $crotchRocket->stop() . "<br>";
+        echo $crotchRocket->wheelie() . "<br>";
+        echo $crotchRocket->jump() . "<br>";
+        echo $crotchRocket->slide() . "<br>";
+        echo displaySpeed($crotchRocket);
+
    ?>
 </body>
 </html>
